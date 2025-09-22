@@ -7,7 +7,7 @@
 curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 eval "$(./bin/micromamba shell hook -s bash)"
 
-micromamba create -y -p ./labenv
+micromamba create -y -p ./labenv python=3.13.7
 
 micromamba activate ./labenv
 
